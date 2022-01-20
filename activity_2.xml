@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".database.Activity2">
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Berita Hari Ini"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="50dp"
+        android:textAlignment="center"
+        android:layout_marginBottom="10dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/pic1"
+            android:layout_width="170dp"
+            android:layout_height="120dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/buttonbackground"
+            android:padding="10dp"
+            app:layout_constraintBottom_toTopOf="@id/pic2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.53"
+            app:srcCompat="@drawable/aeon"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Berita 1"
+            android:textSize="22dp"
+            android:textColor="#000000"
+            app:layout_constraintTop_toTopOf="@id/pic1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/pic1"
+            tools:layout_editor_absoluteY="66dp"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/desc1"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/pic1"
+            android:textColor="#000000"
+            app:layout_constraintTop_toBottomOf="@id/textView1"
+            android:text="Pada hari ini event bazzar diadakan pada
+            aeon mall Tangerang"/>
+
+        <ImageView
+            android:id="@+id/pic2"
+            android:layout_width="170dp"
+            android:layout_height="120dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/buttonbackground"
+            android:padding="10dp"
+            app:layout_constraintBottom_toTopOf="@id/pic3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pic1"
+            app:srcCompat="@drawable/omicron"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Berita 2"
+            android:textSize="22dp"
+            android:textColor="#000000"
+            app:layout_constraintTop_toTopOf="@id/pic2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/pic2"
+            tools:layout_editor_absoluteY="66dp"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/desc2"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/pic2"
+            android:textColor="#000000"
+            app:layout_constraintTop_toBottomOf="@id/textView2"
+            android:text="Kasus Corona varian Omicron telah bertambah luas di Jakarta dan sekitarnya."/>
+        <ImageView
+            android:id="@+id/pic3"
+            android:layout_width="170dp"
+            android:layout_height="120dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/buttonbackground"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pic2"
+            app:layout_constraintBottom_toTopOf="@id/pic4"
+            android:padding="10dp"
+            app:srcCompat="@drawable/monas"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Berita 3"
+            android:textSize="22dp"
+            android:textColor="#000000"
+            app:layout_constraintTop_toTopOf="@id/pic3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/pic3"
+            tools:layout_editor_absoluteY="66dp"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/desc3"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/pic3"
+            android:textColor="#000000"
+            app:layout_constraintTop_toBottomOf="@id/textView3"
+            android:text="Monas sebagai icon dari Ibukota Indonesia, Jakarta"/>
+
+
+        <ImageView
+            android:id="@+id/pic4"
+            android:layout_width="170dp"
+            android:layout_height="120dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/buttonbackground"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pic3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:padding="10dp"
+            app:srcCompat="@drawable/pik"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Berita 4"
+            android:textSize="22dp"
+            android:textColor="#000000"
+            app:layout_constraintTop_toTopOf="@id/pic4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/pic4"
+            tools:layout_editor_absoluteY="66dp"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/desc4"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/pic4"
+            android:textColor="#000000"
+            app:layout_constraintTop_toBottomOf="@id/textView4"
+            android:text="Banyak perubahan baru yang diadakan pada pulau reklamasi Jakarta"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

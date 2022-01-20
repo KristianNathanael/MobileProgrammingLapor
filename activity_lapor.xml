@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LaporActivity">
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Form Laporan"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="50dp"
+        android:textAlignment="center"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="20dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="#000000"
+            android:hint="Masukkan Nama Anda *"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="20dp"
+            android:hint="Masukkan NIK Anda *"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="20dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="#000000"
+            android:hint="Masukkan Nomor Telepon Anda *"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="20dp"
+            android:hint="Ketik Judul Laporan Anda *"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="20dp"
+            android:hint="Ketik Isi Laporan Anda *"/>
+
+        <Spinner
+            android:id="@+id/spLokasi"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="20dp"
+            android:entries="@array/lokasi_kejadian"/>
+
+        <Spinner
+            android:id="@+id/spKategori"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="20dp"
+            android:entries="@array/kategori_laporan"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="55dp"
+            android:background="@drawable/buttonbackground"
+            android:text="Submit"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/buttonNews"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:background="@drawable/buttonbackground"
+        android:text="Lihat berita terbaru disini" />
+
+</LinearLayout>
